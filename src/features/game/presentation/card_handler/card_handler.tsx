@@ -42,11 +42,7 @@ const CardHandler = ({card, onSwipe}: Props) => {
       y: e.nativeEvent.pageY,
     };
 
-    console.log(`
-      x: ${coordMove.x}
-    `);
-
-    /*  if (coordMove.x < width / 2 - 50) {
+    if (coordMove.x < width / 2 - 50) {
       return setDirection(Direction.LEFT);
     }
 
@@ -54,7 +50,7 @@ const CardHandler = ({card, onSwipe}: Props) => {
       return setDirection(Direction.RIGHT);
     }
 
-    return setDirection(Direction.NONE); */
+    return setDirection(Direction.NONE);
   };
 
   return (
